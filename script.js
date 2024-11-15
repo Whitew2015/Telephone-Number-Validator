@@ -11,7 +11,7 @@ const validNumber = () => {
     }
 
     // regex variable for valid phone numbers
-    const numberRegex = /^\d?\s?\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}$/g;
+    const numberRegex = /^1?\s?(\(\d{3}\)|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/;
 
     // check regex with user input and display if the number is valid
     if (numberRegex.test(input.value)) {
